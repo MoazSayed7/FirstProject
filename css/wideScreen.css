@@ -1,0 +1,7 @@
+#program .boxes .box {
+  display: flex;
+}
+#program .boxes .box {
+  align-self: center;
+  margin-right: 0.5rem;
+}

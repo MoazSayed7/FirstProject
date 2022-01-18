@@ -15,6 +15,8 @@
       href="css/wideScreen.css"
       media="screen and (min-width:1100px)"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link
       rel="icon"
       href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png"
@@ -220,32 +222,39 @@
     <section></section>
     <!--Contact Us-->
     <section id="contact" class="bg-sky">
-      <div class="contact-us">
-        <h2 class="s-heading py-1 text-center">Feel free to ask anything</h2>
-        <form>
-          <div class="group-form">
-            <input type="text" name="Name" id="Name" placeholder="Name" />
-            <input type="text" name="Email" id="Email" placeholder="Email" />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="subject"
-              id="Subject"
-              placeholder="subject"
-            />
-            <br />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <input type="submit" class="b bg-dark" />
+          <div class="wrapper">
+        <header>Send us a Message</header>
+        <form action="#">
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <i class='fas fa-user'></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="email" placeholder="Enter your email">
+                    <i class='fas fa-envelope'></i>
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="phone" placeholder="Enter your phone">
+                    <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="website" placeholder="Enter your website">
+                    <i class='fas fa-globe'></i>
+                </div>
+            </div>
+            <div class="message">
+                <textarea placeholder="Write your message" name="message"></textarea>
+                <i class="material-icons">message</i>
+            </div>
+            <div class="button-area">
+                <button type="submit">Send Message</button>
+                <span></span>
+            </div>
         </form>
-      </div>
+    </div>
       <div id="map">
         <iframe
           src="https://www.google.com/maps?q=Cairo%2C%20Egypt&z=14&t=&ie=UTF8&output=embed"
